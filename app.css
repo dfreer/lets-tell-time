@@ -1,0 +1,28 @@
+html, body {height: 100%; background: radial-gradient(#860BC9, #52047D);}
+body {margin: 0; padding: 0; font-family: sans-serif; color: white; text-align: center; font-size: 100%;}
+
+h1 {font-size: 2rem; margin: 2rem 0; padding: 0;}
+h1 a {font-size: .5em; color: white; text-decoration: none; vertical-align: text-top; opacity: .3}
+
+#clock { cursor: pointer; background: #ececec; width: 250px; height: 250px; border-radius: 50%; border: 14px solid #333; position: relative; box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0#8); margin: 0 auto; }
+#clock:hover { border-color: black;}
+#dot { width: 14px; height: 14px; border-radius: 50%; background: #ccc; top: 0; left: 0; right: 0; bottom: 0; margin: auto; position: absolute; z-index: 10; box-shadow: 0 2px 4px -1px black; }
+#hour-hand { position: absolute; z-index: 6; width: 4px; height: 65px; background: #000; top: 54px; transform-origin: 50% 72px; left: 50%; margin-left: -2px; border-top-left-radius: 50%; border-top-right-radius: 50%; transition: all .5s ease; }
+#minute-hand { position: absolute; z-index: 5; width: 4px; height: 90px; background: #777; top: 30px; left: 50%; margin-left: -2px; border-top-left-radius: 50%; border-top-right-radius: 50%; transform-origin: 50% 95px; transition: all .5s ease; }
+.line { position: absolute; z-index: 2; width: 2px; height: 15px; background: #555; left: 50%; margin-left: -1px; transform-origin: 50% 125px; }
+.line:nth-of-type(5n+1) { position: absolute; z-index: 2; width: 4px; height: 25px; background: #555; left: 50%; margin-left: -1px; transform-origin: 50% 125px; }
+#answer { opacity: .3; color: #555; margin: .5em auto; width: 200px; box-sizing: border-box; background: #fff; border-radius: 5px; font-size: 44px; padding: .3em 1em;}
+#hour-labels .label {position: absolute; color: black; font-size: 20px;}
+#hour-labels .label:nth-child(1) {left: 66%; top: 40px;}
+#hour-labels .label:nth-child(2) {left: 79%; top: 70px;}
+#hour-labels .label:nth-child(3) {left: 84%; top: 114px;}
+#hour-labels .label:nth-child(4) {left: 79%; top: 158px;}
+#hour-labels .label:nth-child(5) {left: 66%; top: 190px;}
+#hour-labels .label:nth-child(6) {left: 50%; margin-left: -4px; top: 202px;}
+#hour-labels .label:nth-child(7) {left: 31%; top: 190px;}
+#hour-labels .label:nth-child(8) {left: 18%; top: 158px;}
+#hour-labels .label:nth-child(9) {left: 13%; top: 114px;}
+#hour-labels .label:nth-child(10) {left: 17%; top: 70px;}
+#hour-labels .label:nth-child(11) {left: 30%; top: 40px;}
+#hour-labels .label:nth-child(12) {left: 50%; margin-left: -9px; top: 26px;}
+#settings { display: none; padding-bottom: 1em;}

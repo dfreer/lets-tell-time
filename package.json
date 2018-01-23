@@ -1,0 +1,16 @@
+{
+  "name": "lets-tell-time",
+  "version": "1.0.0",
+  "productName": "Let's Tell Time!",
+  "description": "A simple time telling electron app",
+  "main": "main.js",
+  "scripts": {
+    "start": "node_modules/.bin/electron ."
+  },
+  "author": "Derek Freer <derek.freer@nemours.org>",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  },
+  "dependencies": {}
+}
